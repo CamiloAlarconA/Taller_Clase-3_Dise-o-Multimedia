@@ -1,3 +1,4 @@
+/* Definición de variables globales para colores y tamaños de fuente reutilizables */
 :root {
     --red: #E5252E;
     --white: #FFFFFF;
@@ -9,11 +10,13 @@
     --lg: 18px;
 }
 
+/* Configuración básica del cuerpo de la página: quita márgenes y define la fuente */
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
 }
 
+/* Contenedor principal del login: centrado total en pantalla completa */
 .login {
     width: 100%;
     height: 100vh;
@@ -21,12 +24,14 @@ body {
     place-items: center;
 }
 
+/* Estructura del contenedor del formulario con un ancho fijo de 300px */
 .form-container {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
 }
 
+/* Estilo del logo: oculto por defecto y centrado horizontalmente */
 .logo {
     width: 150px;
     margin-bottom: 48px;
@@ -34,12 +39,14 @@ body {
     display: none;
 }
 
+/* Estilo para los títulos principales centrados */
 .title {
     font-size: var(--lg);
     margin-bottom: 12px;
     text-align: center;
 }
 
+/* Estilo para los subtítulos: color gris y peso de fuente ligero */
 .subtitle {
     color: var(--gray);
     font-size: var(--md);
@@ -49,17 +56,20 @@ body {
     text-align: center;
 }
 
+/* Contenedor flexible para los elementos del formulario en columna */
 .form {
     display: flex;
     flex-direction: column;
 }
 
+/* Estilo de las etiquetas de los campos de entrada */
 .label {
     font-size: var(--sm);
     font-weight: bold;
     margin-bottom: 4px;
 }
 
+/* Configuración estética de los campos de texto (inputs) */
 .input {
     background-color: var(--nnn);
     border: none;
@@ -70,6 +80,7 @@ body {
     margin-bottom: 12px;
 }
 
+/* Botón principal: color de fondo rojo y texto blanco */
 .primary-button {
     background-color: var(--red);
     border-radius: 8px;
@@ -82,17 +93,20 @@ body {
     height: 50px;
 }
 
+/* Margen específico para separar el botón de login de otros elementos */
 .login-button {
     margin-top: 14px;
     margin-bottom: 30px;
 }
 
+/* Media query: muestra el logo solo en pantallas pequeñas (máximo 640px) */
 @media (max-width: 640px) {
     .logo {
         display: block;
     }
 }
 
+/* Contenedor circular gris para iconos */
 .icon-container {
     background-color: var(--nnn);
     border-radius: 50%;
@@ -103,20 +117,24 @@ body {
     margin: 0 auto
 }
 
+/* Tamaño del icono de email dentro de su contenedor circular */
 .icon-email {
     width: 60%;
 }
 
+/* Quita el subrayado de los enlaces y les asigna el color principal */
 a {
     text-decoration: none;
     color: var(--red);
 }
 
+/* Clase auxiliar para centrar elementos internos con grid */
 .a {
     display: grid;
     place-items: center;
 }
 
+/* Botón secundario: fondo blanco y bordes de color rojo */
 .second-button {
     background-color: var(--white);
     border-radius: 8px;
@@ -129,22 +147,27 @@ a {
     height: 50px;
 }
 
+/* Media query para pantallas de escritorio (mínimo 640px) */
 @media (min-width: 640px) {
 
+    /* Ajusta el contenedor de registro para ocupar todo el alto */
     .signup .form-container {
         height: 100vh;
     }
 
+    /* Permite que el formulario ocupe el alto disponible */
     .signup .form {
         height: 100%;
     }
 
+    /* Empuja el botón de login hacia la parte inferior del contenedor */
     .signup .login-button {
         margin-top: auto;
     }
 
 }
 
+/* Contenedor principal de la sección de registro con centrado total */
 .signup {
     width: 100%;
     height: 100vh;

@@ -2,40 +2,69 @@
 <html lang="en">
 
 <head>
+    <!-- Configuración de codificación de caracteres -->
     <meta charset="UTF-8">
+
+    <!-- Compatibilidad con navegadores antiguos de Microsoft -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Configuración responsive para dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts -->
+
+    <!-- Conexión previa a Google Fonts para mejorar carga -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&di
-splay=swap" rel="stylesheet">
-    <!-- Hoja de estilos -->
+
+    <!-- Fuente Quicksand desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Archivo de estilos CSS principal -->
     <link rel="stylesheet" href="./styles.css">
-    <!-- Favicon -->
+
+    <!-- Ícono que aparece en la pestaña del navegador -->
     <link rel="icon" type="image/svg" href="./logos/favicon.svg">
+
+    <!-- Título de la página -->
     <title>Email</title>
 </head>
 
 <body>
+    <!-- Contenedor principal de la vista -->
     <div class="login">
+
+        <!-- Caja central del contenido -->
         <div class="form-container">
+
+            <!-- Logo de la aplicación -->
             <img src="./logos/logo.svg" alt="logo" class="logo">
 
+            <!-- Título principal del mensaje -->
             <h1 class="title">Email has been sent!</h1>
-            <p class="subtitle">Please check your inbox for instruccions on how to reset the password</p>
 
+            <!-- Texto explicativo -->
+            <p class="subtitle">
+                Please check your inbox for instruccions on how to reset the password
+            </p>
+
+            <!-- Contenedor del ícono de email -->
             <div class="icon-container">
                 <img src="./icons/email.svg" alt="" class="icon-email">
             </div>
 
+            <!-- Salto de línea -->
             <br>
 
+            <!-- Botón para ir a login -->
             <input type="submit" value="Login" class="primary-button login-button">
 
+            <!-- Salto de línea -->
             <br>
 
-            <p class="subtitle">Didn't recive the email? <a href="">Resend</a></p>
+            <!-- Texto con enlace para reenviar correo -->
+            <p class="subtitle">
+                Didn't recive the email? <a href="">Resend</a>
+            </p>
+
         </div>
     </div>
 </body>

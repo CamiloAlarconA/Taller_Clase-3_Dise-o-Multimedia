@@ -1,0 +1,47 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Caja del menú */
+.menu-desktop {
+    width: 160px;
+    border: 1px solid #dcdcdc;
+    border-top: none; 
+    border-radius: 8px;
+    padding: 12px;
+    margin: 16px;
+}
+
+/* Quitar estilos por defecto de lista */
+.menu-desktop ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Espaciado de items */
+.menu-desktop li {
+    margin-bottom: 12px;
+    text-align: right;
+}
+
+/* Borde separador a todos menos el último */
+.menu-desktop li:last-child {
+    border-top: 1px solid #e6e6e6;
+    padding-top: 12px;
+}
+
+/* Estilo de enlaces */
+.menu-desktop a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+/* Último elemento (Sign out) */
+.menu-desktop li:last-child a {
+    color: #777;
+    font-size: 13px;
+}

@@ -1,0 +1,47 @@
+/* Reset básico y tipografía */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor ocupa el ancho de pantalla en móvil */
+.menu-mobile {
+    width: 100%;
+    padding: 24px;
+}
+
+/* Quita viñetas y espacios por defecto de listas */
+.menu-mobile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+/* Línea separadora SOLO bajo la primera lista (categorías) */
+.menu-mobile ul:nth-child(1) {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 16px;
+}
+
+/* Espaciado vertical entre items */
+.menu-mobile li {
+    margin-bottom: 14px;
+}
+
+/* Estilo general de enlaces */
+.menu-mobile a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Título de sección categorías */
+.menu-mobile .title {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Email más pequeño y gris */
+.menu-mobile .email {
+    font-size: 12px;
+    color: #777;
+}

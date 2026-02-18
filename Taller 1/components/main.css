@@ -1,0 +1,67 @@
+/* Asiganamos variables para los colores y tamaños de fuente que se utilizarán en el diseño. Esto nos permitirá mantener la consistencia y facilitar futuros cambios en el diseño. */
+:root{
+  --card-size: 100px;
+}
+
+/* Se estipulan los estilos para lo que este dentro de cards-container */
+.cards-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--card-size));
+  gap: 26px;
+  place-content: center;
+}
+
+/* Se estipulan los estilos para cada tarjeta de producto */
+.product-card{
+  width: var(--card-size);
+}
+
+/* Se estipulan los estilos para la imagen dentro de cada tarjeta de producto */
+.product-card img{
+  width: var(--card-size);
+  height: var(--card-size);
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Se estipulan los estilos para la información de cada tarjeta de producto */
+.product-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+/* Estilo de los objetos que esten dentro de figure en la info del producto */
+.product-info figure{
+    margin: 0;
+}
+
+/* Estilo de la imagen dentro de la figure de información del producto */
+.product-info figure img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Estilo del precio */
+.product-infodiv p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+/* Estilo del nombre */
+.product-info div p:nth-child(2) {
+font-size: var( -- sm);
+margin-top: 0;
+margin-bottom: 0;
+color: var( -- very-light-pink);
+}
+
+/* Estilo responsive*/
+@media (max-width: 640px) {
+  :root {
+    --card-size: 140px;
+  }
+}
